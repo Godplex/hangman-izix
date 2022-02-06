@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
     }
 
     connectedCallback() {
-        this.innerHTML = `<div class="copyright-text text-center text-dark py-5 my-4">
+        this.innerHTML = `<footer class="copyright-text text-center text-dark pt-5">
       Copyright © 2022 - All rights reserved by Julian David Rincon Espinosa.
       <div class="row pt-5">
         <div class="col-4">
@@ -27,7 +27,7 @@ class Footer extends HTMLElement {
           </a>
         </div>
       </div>
-    </div>`;
+    </footer>`;
     }
 
 }

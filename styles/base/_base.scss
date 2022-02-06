@@ -83,13 +83,15 @@ body {
     outline: none !important;
 }
 
-#wrongWords{
-    font-size: 100px!important;
-}
-
 html,
 body {
     max-width: 100%;
     overflow-x: hidden !important;
     overflow-y: auto !important;
+}
+
+body {
+    display:grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }

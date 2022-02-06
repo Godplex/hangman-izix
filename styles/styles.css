@@ -12732,17 +12732,18 @@ body {
   outline: none !important;
 }
 
-#test > input {
-  border: none;
-  border-bottom: 5px solid #0A3871;
-  width: calc(1.75em + 1.75vw) !important;
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: calc(1em + 1vw);
-  color: #0A3871;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
 
-#test > input:focus {
-  outline: none !important;
+body {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
 }
 /*# sourceMappingURL=styles.css.map */

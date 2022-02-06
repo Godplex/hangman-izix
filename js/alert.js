@@ -14,10 +14,17 @@ function confirmAlert(title, color) {
 
 function successAlert(title) {
     Swal.fire({
-        icon: 'success',
+        allowOutsideClick: false,
         title: title,
+        showCancelButton: false,
+        confirmButtonText: 'Start',
         confirmButtonColor: "#0A3871",
-    })
+    }).then((result) => {
+        if (result.isConfirmed) {
+            var url = window.location.toString();
+            window.location = url.replace("addNewWord.html", "game.html");
+        }
+    });
 }
 
 function errorAlert(title) {

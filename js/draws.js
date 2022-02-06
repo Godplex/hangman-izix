@@ -1,40 +1,45 @@
 
 function draw() {
-        ctx.strokeStyle = "#0A3871";
-        ctx.fillStyle = "#0A3871";
-        ctx.lineWidth = 5;
+    ctx.strokeStyle = "#0A3871";
+    ctx.fillStyle = "#0A3871";
+    ctx.lineWidth = 5;
 
-        switch (lifes) {
-            case 8:
-                drawBottomBase(ctx);
-                break;
-            case 7:
-                drawBase(ctx);
-                break;
-            case 6:
-                drawTopBase(ctx);
-                break;
-            case 5:
-                drawBody(ctx);
-                break;
-            case 4:
-                drawRightArm(ctx);
-                break;
-            case 3:
-                drawLeftArm(ctx);
-                break;
-            case 2:
-                drawRightLeg(ctx);
-                break;
-            case 1:
-                drawLeftLeg(ctx);
-                break;
-            case 0:
-                drawHead(ctx);
-                break;
-        }
-
+    switch (lifes) {
+        case 9:
+            drawBottomBase(ctx);
+            break;
+        case 8:
+            drawBase(ctx);
+            break;
+        case 7:
+            drawTopBase(ctx);
+            break;
+        case 6:
+            drawHead(ctx);
+            break;
+        case 5:
+            drawBody(ctx);
+            break;
+        case 4:
+            drawLeftArm(ctx);
+            break;
+        case 3:
+            drawRightArm(ctx);
+            break;
+        case 2:
+            drawLeftLeg(ctx);
+            break;
+        case 1:
+            drawRightLeg(ctx);
+            break;
+        case 0:
+            drawRightEye(ctx);
+            drawLeftEye(ctx);
+            drawMouth(ctx);
+            break;
     }
+
+}
 
 function drawBase(ctx) {
     ctx.beginPath();
@@ -63,13 +68,12 @@ function drawHead(ctx) {
     ctx.beginPath();
     ctx.arc(280, 98, 40, 0, Math.PI * 2);
     ctx.stroke();
+}
+
+function drawMouth(ctx) {
     ctx.beginPath();
     ctx.arc(280, 128, 20, 1.1 * Math.PI, 1.9 * Math.PI, false);
     ctx.stroke();
-
-    drawRightEye(ctx);
-    drawLeftEye(ctx);
-
 }
 
 function drawRightEye(ctx) {
