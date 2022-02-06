@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootswatch": "^5.1.3",
+    "node-modules": "^1.0.1",
+    "sass": "^1.49.4"
+  }
+}

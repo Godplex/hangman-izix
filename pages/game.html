@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="../favicon.ico">
+    <title>Hangman - Oracle One</title>
+</head>
+
+<body>
+    <navbar-component></navbar-component>
+    <div class="container min-vh-100 d-flex flex-column align-items-center">
+        <div class="col-11">
+            <div class="w-100 d-flex align-items-center justify-content-center py-md-5">
+                <canvas id="figure" width="370px" height="450px">
+
+                </canvas>
+            </div>
+            <div class="w-100 py-4 input-group text-center d-flex align-items-center justify-content-center"
+                id="underlines">
+
+            </div>
+            <div class="w-100 py-4 input-group text-center d-flex align-items-center justify-content-center fs-3" id="wrongWords">
+                
+            </div>
+            <div class="w-100 input-group text-center d-flex align-items-center justify-content-center" id="keyboard">
+                <keyboard-component></keyboard-component>
+            </div>
+        </div>
+        <div class="col-11">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                <button class="btn btn-primary col-md-5 p-4 my-sm-0 my-2" id="newGame">
+                    <i class="fas fa-gamepad fa-lg"></i> New game
+                </button>
+                <a class="btn btn-outline-primary col-md-5 p-4 my-sm-0 my-2" href="../index.html">
+                    <i class="fas fa-times fa-lg"></i> Give up
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer-component></footer-component>
+    <script src="../components/Navbar.js"></script>
+    <script src="../components/Footer.js"></script>
+    <script src="../components/Keyboard.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/words.js"></script>
+    <script src="../js/draws.js"></script>
+    <script src="../js/alert.js"></script>
+</body>
+
+</html>
