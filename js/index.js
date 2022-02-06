@@ -1,3 +1,4 @@
+
 let underlines = document.querySelector("#underlines");
 let newGame = document.querySelector("#newGame");
 let wrongWords = document.querySelector("#wrongWords");
