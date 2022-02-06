@@ -12746,4 +12746,9 @@ body {
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
 }
+
+canvas {
+  width: 40vh;
+  height: 50vh;
+}
 /*# sourceMappingURL=styles.css.map */
