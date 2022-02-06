@@ -8,7 +8,7 @@ class Keyboard extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <div class="keyboard-row pb-2">
+        <div class="btn-group pb-2">
             <button class="btn btn-primary" data-key="Q">Q</button>
             <button class="btn btn-primary" data-key="W">W</button>
             <button class="btn btn-primary" data-key="E">E</button>
@@ -17,7 +17,7 @@ class Keyboard extends HTMLElement {
             <button class="btn btn-primary" data-key="Y">Y</button>
             <button class="btn btn-primary" data-key="U">U</button>
         </div>
-        <div class="keyboard-row pb-2">
+        <div class="btn-group pb-2">
             <button class="btn btn-primary" data-key="I">I</button>
             <button class="btn btn-primary" data-key="O">O</button>
             <button class="btn btn-primary" data-key="P">P</button>
@@ -26,7 +26,7 @@ class Keyboard extends HTMLElement {
             <button class="btn btn-primary" data-key="D">D</button>
             <button class="btn btn-primary" data-key="F">F</button>
         </div>
-        <div class="keyboard-row pb-2">
+        <div class="btn-group pb-2">
             <button class="btn btn-primary" data-key="G">G</button>
             <button class="btn btn-primary" data-key="H">H</button>
             <button class="btn btn-primary" data-key="J">J</button>
@@ -35,7 +35,7 @@ class Keyboard extends HTMLElement {
             <button class="btn btn-primary" data-key="Z">Z</button>
             <button class="btn btn-primary" data-key="X">X</button>
         </div>
-        <div class="keyboard-row pb-2">
+        <div class="btn-group pb-2">
             <button class="btn btn-primary" data-key="C">C</button>
             <button class="btn btn-primary" data-key="V">V</button>
             <button class="btn btn-primary" data-key="B">B</button>
