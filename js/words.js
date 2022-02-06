@@ -6,7 +6,7 @@ chooseWord();
 function chooseWord() {
     hiddenWord = localWords[Math.floor(Math.random() * localWords.length)];
     guessedWord = "";
-    lifes = 9;
+    lifes = 10;
     underlines.innerHTML = "";
     writtenLetters = [];
     isStart = true;
